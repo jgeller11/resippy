@@ -1,21 +1,3 @@
-@-webkit-keyframes hue {
-    0% {
-        -webkit-filter: hue-rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        -webkit-filter: hue-rotate(360deg);
-        opacity: 1;
-    }
-}
-
-.club {
-    color: lightblue;
-    font-weight: 900;
-    font-style: italic;
-    -webkit-animation: hue 10s infinite linear;
-}
-
 body {
     margin: 0;
     font-family: helvetica;
@@ -31,6 +13,30 @@ body {
     width: 100%;
     height: 100%;
 
+}
+
+.recipeCard {
+    border-radius: 25px;
+    height: 30vh;
+    width: min(90vw, 40vh);
+    background-size: cover;
+}
+
+.recipeCard h1, .recipeCard h2 {
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.cardOverlay {
+    border-radius: 25px;
+    height: 100%;
+    transition: .2s;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.cardOverlay:hover {
+    background: rgba(0, 0, 0, 0.15);
 }
 
 .menuBar {
